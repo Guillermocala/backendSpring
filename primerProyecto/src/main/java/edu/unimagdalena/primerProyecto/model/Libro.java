@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 public class Libro {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	@Column(nullable = false)
 	private String nombre;
@@ -35,11 +35,11 @@ public class Libro {
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

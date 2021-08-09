@@ -41,6 +41,15 @@ public class Mascota {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Mascota(Long id, String nombre, String raza, Date fechaNacimiento, Propietario propietario) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.raza = raza;
+		this.fechaNacimiento = fechaNacimiento;
+		this.propietario = propietario;
+	}
+
 	public Long getId() {
 		return id;
 	}

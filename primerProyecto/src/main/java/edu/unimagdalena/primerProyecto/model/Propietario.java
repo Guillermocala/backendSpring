@@ -17,7 +17,7 @@ import javax.persistence.Table;
 public class Propietario {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	@Column
 	private String nombre;
 	@Column
@@ -25,17 +25,20 @@ public class Propietario {
 	
 	@OneToMany(mappedBy = "propietario")
 	private Set<Mascota> mascotas;
-
-	public Propietario() {
+	
+	public Propietario(Long id, String nombre, String identificacion, Set<Mascota> mascotas) {
 		super();
-		// TODO Auto-generated constructor stub
+		this.id = id;
+		this.nombre = nombre;
+		this.identificacion = identificacion;
+		this.mascotas = mascotas;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
