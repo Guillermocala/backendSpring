@@ -15,6 +15,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="Mascotas")
 public class Mascota {
@@ -31,7 +33,8 @@ public class Mascota {
 	@Column
 	@Temporal(TemporalType.DATE)
 	private Date fechaNacimiento;
-
+	
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "idPropietario")
 	private Propietario propietario;

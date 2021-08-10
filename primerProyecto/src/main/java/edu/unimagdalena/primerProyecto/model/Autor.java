@@ -32,6 +32,13 @@ public class Autor {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Autor(Long id, String nombre, Set<Libro> libros) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.libros = libros;
+	}
+
 	public Long getId() {
 		return id;
 	}

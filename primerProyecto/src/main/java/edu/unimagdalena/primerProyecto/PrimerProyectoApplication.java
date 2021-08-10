@@ -21,10 +21,11 @@ public class PrimerProyectoApplication {
 	@Bean
 	public CommandLineRunner loadData(PropietarioRepository propietarioRep) {
 		return (args)-> {
+			/*
 			Propietario propietario = new Propietario(null, "Andrés", "12345", null);
 			propietarioRep.save(propietario);
 			log.info("Propietario ingresado!");
-			
+			*/
 		};
 	}
 }

@@ -26,6 +26,11 @@ public class Propietario {
 	@OneToMany(mappedBy = "propietario")
 	private Set<Mascota> mascotas;
 	
+	public Propietario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Propietario(Long id, String nombre, String identificacion, Set<Mascota> mascotas) {
 		super();
 		this.id = id;

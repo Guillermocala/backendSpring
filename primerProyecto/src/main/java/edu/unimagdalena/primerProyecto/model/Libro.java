@@ -35,6 +35,14 @@ public class Libro {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Libro(Long id, String nombre, Date fechaPublicacion, Set<Autor> autores) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.fechaPublicacion = fechaPublicacion;
+		this.autores = autores;
+	}
+
 	public Long getId() {
 		return id;
 	}

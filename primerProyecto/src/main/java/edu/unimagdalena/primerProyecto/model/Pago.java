@@ -35,6 +35,14 @@ public class Pago {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Pago(Long id, Date fecha, double cantidad, Factura factura) {
+		super();
+		this.id = id;
+		this.fecha = fecha;
+		this.cantidad = cantidad;
+		this.factura = factura;
+	}
+
 	public Long getId() {
 		return id;
 	}
